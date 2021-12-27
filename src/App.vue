@@ -1,15 +1,19 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div id="app">
+    <nav class="navbar navbar-expand navbar-dark bg-dark">
+      <router-link to="/" class="navbar-brand">Home</router-link>
+      <Todolist msg="Hello"/>
+    </nav>
+  </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Todolist from './components/Todolist.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    Todolist
   }
 }
 </script>
